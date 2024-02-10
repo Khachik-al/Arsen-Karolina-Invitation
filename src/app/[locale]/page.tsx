@@ -1,6 +1,10 @@
-import { useTranslations } from 'next-intl';
+import Invitation from '@/components/Invitation';
 
 export default function Home() {
-  const t = useTranslations('Home');
-  return <h1>{t('title')}</h1>;
+  return (
+    <div>
+      <Invitation />
+      <div className="h-[170px] bg-sky-600"></div>
+    </div>
+  );
 }
