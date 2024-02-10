@@ -9,7 +9,7 @@ import type { Duration } from 'dayjs/plugin/duration';
 
 dayjs.extend(plugin_duration);
 
-export default function TimeCountDown() {
+export default function TimeCounter() {
   const t = useTranslations('Invitation');
 
   const [duration, setDuration] = useState<Duration>(dayjs.duration(0));

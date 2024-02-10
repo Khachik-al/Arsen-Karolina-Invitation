@@ -2,7 +2,7 @@ import type { CSSProperties } from 'react';
 import { useTranslations } from 'next-intl';
 
 import background from '@/assets/images/test_background.jpg';
-import TimeCountDown from '@/components/Invitation/elements/TimeCountDown';
+import TimeCounter from '@/components/Invitation/elements/TimeCounter';
 
 const InvitationBackground: CSSProperties = {
   backgroundImage: `url(${background.src})`,
@@ -32,7 +32,7 @@ export default function Invitation() {
         </div>
         <span className="text-2xl">{t('time_left')}</span>
       </div>
-      <TimeCountDown />
+      <TimeCounter />
     </div>
   );
 }
