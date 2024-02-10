@@ -23,6 +23,8 @@ export default function TimeCountDown() {
     };
   }, [now, wedding_date]);
 
+  if (duration.as('days') === 0) return null;
+
   return (
     <div className="flex items-center gap-[30px]">
       <div className="flex flex-col items-center gap-[5px] pe-[30px] border-r-[1px] border-solid border-[#FFFFFF]">
