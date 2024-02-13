@@ -3,24 +3,14 @@ import type { Metadata } from 'next';
 
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 
-import { Inter } from 'next/font/google';
-import localFont from 'next/font/local';
+import clsx from 'clsx';
 
-import '../globals.css';
+import { inter, armenian_vrdznagir, montserrat_arm } from '@/fonts';
 
-const armenian_vrdznagir = localFont({
-  src: '../../assets/fonts/vrdznagir.otf',
-  variable: '--font-arm-vrdznagir',
-  // display: 'swap',
-});
+import { localeFont } from '@/locales';
+import type { Locale } from '@/locales';
 
-const inter = Inter({ subsets: ['latin'] });
-
-const locale_font = {
-  am: armenian_vrdznagir.className,
-  en: inter.className,
-  ru: inter.className,
-};
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Tigran & Mariam',
@@ -28,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 type RootLayoutProps = PropsWithChildren & {
-  params: { locale: string };
+  params: { locale: Locale };
 };
 
 export default function RootLayout({ children, params: { locale } }: Readonly<RootLayoutProps>) {
@@ -36,7 +26,14 @@ export default function RootLayout({ children, params: { locale } }: Readonly<Ro
 
   return (
     <html lang={locale}>
-      <body className={locale_font[locale]}>
+      <body
+        className={clsx(
+          localeFont[locale],
+          inter.variable,
+          armenian_vrdznagir.variable,
+          montserrat_arm.variable,
+        )}
+      >
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>

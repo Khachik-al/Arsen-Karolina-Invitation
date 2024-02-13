@@ -16,23 +16,13 @@ export default function Invitation() {
   const t = useTranslations('Invitation');
 
   return (
-    <div
-      className="h-screen flex flex-col justify-end items-center text-white gap-[35px] py-[30px]"
-      style={InvitationBackground}
-    >
-      <div className="flex flex-col items-center gap-[18px]">
-        <div className="flex flex-col items-center gap-[5px]">
-          <span className="text-xl font-light">{t('title')}</span>
-          <span className="text-xl font-light">{t('sub_title')}</span>
+    <div className="h-screen" style={InvitationBackground}>
+      <div className="h-full w-full bg-gradient-to-t from-[#000000]/40 to-[#000000]/0 flex flex-col justify-end items-center text-white gap-[35px] py-[30px]">
+        <div className="flex flex-col items-center gap-[18px]">
+          <span className="text-2xl font-light">{t('wedding_time_left')}</span>
         </div>
-        <span className="text-2xl font-semibold">{t('date')}</span>
-        <div className="flex flex-col items-center gap-[5px]">
-          <span className="text-2xl">{t('regards')}</span>
-          <span className="text-2xl font-semibold">{t('names')}</span>
-        </div>
-        <span className="text-2xl">{t('time_left')}</span>
+        <TimeCounter />
       </div>
-      <TimeCounter />
     </div>
   );
 }

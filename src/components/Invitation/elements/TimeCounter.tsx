@@ -26,22 +26,22 @@ export default function TimeCounter() {
   if (duration.as('days') === 0) return null;
 
   return (
-    <div className="flex items-center gap-[30px]">
-      <div className="flex flex-col items-center gap-[5px] pe-[30px] border-r-[1px] border-solid border-[#FFFFFF]">
-        <span className="text-6xl">{Math.floor(duration.as('days'))}</span>
-        <span>{t('days')}</span>
+    <div className="flex items-center gap-[20px]">
+      <div className="flex flex-col items-center gap-[5px] pe-[20px] border-r-[1px] border-solid border-[#FFFFFF]/50 min-w-[130px]">
+        <span className="text-6xl font-medium">{Math.floor(duration.as('days'))}</span>
+        <span className="font-light">{t('days')}</span>
       </div>
-      <div className="flex flex-col items-center gap-[5px] pe-[30px] border-r-[1px] border-solid border-[#FFFFFF]">
-        <span className="text-6xl">{duration.hours()}</span>
-        <span>{t('hours')}</span>
+      <div className="flex flex-col items-center gap-[5px] pe-[20px] border-r-[1px] border-solid border-[#FFFFFF]/50 min-w-[130px]">
+        <span className="text-6xl font-medium">{duration.hours()}</span>
+        <span className="font-light">{t('hours')}</span>
       </div>
-      <div className="flex flex-col items-center gap-[5px] pe-[30px] border-r-[1px] border-solid border-[#FFFFFF]">
-        <span className="text-6xl">{duration.minutes()}</span>
-        <span>{t('minutes')}</span>
+      <div className="flex flex-col items-center gap-[5px] pe-[20px] border-r-[1px] border-solid border-[#FFFFFF]/50 min-w-[130px]">
+        <span className="text-6xl font-medium">{duration.minutes()}</span>
+        <span className="font-light">{t('minutes')}</span>
       </div>
-      <div className="flex flex-col items-center gap-[5px] pe-[30px]">
-        <span className="text-6xl">{duration.seconds()}</span>
-        <span>{t('seconds')}</span>
+      <div className="flex flex-col items-center gap-[5px] pe-[20px] min-w-[130px]">
+        <span className="text-6xl font-medium">{duration.seconds()}</span>
+        <span className="font-light">{t('seconds')}</span>
       </div>
     </div>
   );
