@@ -1,5 +1,12 @@
 {
   "Invitation": {
-    "title": "Hello world!"
+    "Tigran": "Tigran",
+    "Mariam": "Mariam",
+    "wedding_time_left": "Counting Down to the Moment We Become One!",
+    "date": "December 10 2023",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
   }
 }
