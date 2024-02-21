@@ -1,13 +1,34 @@
 {
+  "Metadata": {
+    "title": "Տիգրան և Մարիամ",
+    "description": "Սիրով հրավիրում ենք Ձեզ կիսելու մեզ հետ մեր կյանքի կարևոր և հիշարժան օրը"
+  },
   "Invitation": {
-    "title": "Սիրով հրավիրում ենք ձեզ",
-    "sub_title": "մեր հարսանյաց արարողությանը",
+    "Tigran": "Տիգրան",
+    "Mariam": "Մարիամ",
     "wedding_time_left": "Осталось до момента, когда станем семьей",
-    "date": "15 Июня 2024",
     "days": "Дней",
     "hours": "Часов",
     "minutes": "Минут",
-    "seconds": "Секунд",
-    "regards": "հարգանքներով"
+    "seconds": "Секунд"
+  },
+  "WeddingDate": {
+    "invitation_text": "Սիրով հրավիրում ենք Ձեզ կիսելու մեզ հետ մեր կյանքի կարևոր և հիշարժան օրը",
+    "date": "15 Июня 2024"
+  },
+  "InvitationPlaces": {
+    "how_to_get_there": "Ինչպես հասնել",
+    "wedding_ceremony": {
+      "invitation_name": "wedding_ceremony-invitation_name",
+      "time": "wedding_ceremony-time",
+      "place_name": "wedding_ceremony-place_name",
+      "place_address": "wedding_ceremony-place_address"
+    },
+    "wedding_party": {
+      "invitation_name": "wedding_party-invitation_name",
+      "time": "wedding_party-time",
+      "place_name": "wedding_party-place_name",
+      "place_address": "wedding_party-place_address"
+    }
   }
 }

@@ -1,12 +1,34 @@
 {
+  "Metadata": {
+    "title": "Tigran & Mariam",
+    "description": "Սիրով հրավիրում ենք Ձեզ կիսելու մեզ հետ մեր կյանքի կարևոր և հիշարժան օրը"
+  },
   "Invitation": {
     "Tigran": "Tigran",
     "Mariam": "Mariam",
     "wedding_time_left": "Counting Down to the Moment We Become One!",
-    "date": "December 10 2023",
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",
     "seconds": "Seconds"
+  },
+  "WeddingDate": {
+    "invitation_text": "Սիրով հրավիրում ենք Ձեզ կիսելու մեզ հետ մեր կյանքի կարևոր և հիշարժան օրը",
+    "date": "15th June, 2024"
+  },
+  "InvitationPlaces": {
+    "how_to_get_there": "how_to_get_there",
+    "wedding_ceremony": {
+      "invitation_name": "wedding_ceremony-invitation_name",
+      "time": "wedding_ceremony-time",
+      "place_name": "wedding_ceremony-place_name",
+      "place_address": "wedding_ceremony-place_address"
+    },
+    "wedding_party": {
+      "invitation_name": "wedding_party-invitation_name",
+      "time": "wedding_party-time",
+      "place_name": "wedding_party-place_name",
+      "place_address": "wedding_party-place_address"
+    }
   }
 }
