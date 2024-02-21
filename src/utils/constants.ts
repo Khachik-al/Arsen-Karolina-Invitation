@@ -13,7 +13,7 @@ export enum PlacesNames {
 }
 
 export type PlacesAddressUrlType = {
-  [key in PlacesNames]: (typeof URL)['href'];
+  [key in PlacesNames]: string;
 };
 
 export const placesNames: PlacesNames[] = [PlacesNames.wedding_ceremony, PlacesNames.wedding_party];
