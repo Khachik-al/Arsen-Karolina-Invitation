@@ -34,6 +34,11 @@ export async function generateMetadata({
         hy: '/hy',
       },
     },
+    icons: {
+      icon: '/icon.svg',
+      shortcut: '/TM.png',
+      apple: '/TM.png',
+    },
     openGraph: {
       locale,
       type: 'website',
