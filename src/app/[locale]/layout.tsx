@@ -23,8 +23,11 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
   return {
-    metadataBase: new URL(`https://tigran-mariam.wedding/${locale}`),
-    title: t('title'),
+    metadataBase: new URL(`https://tigran-mariam.wedding`),
+    title: {
+      default: t('title'),
+      template: '',
+    },
     description: t('description'),
     alternates: {
       canonical: '/',
@@ -34,18 +37,10 @@ export async function generateMetadata({
         hy: '/hy',
       },
     },
-    icons: {
-      icon: '/icon.svg',
-      shortcut: '/TM.png',
-      apple: '/TM.png',
-    },
     openGraph: {
-      locale,
       type: 'website',
-      siteName: t('title'),
       title: t('title'),
       description: t('description'),
-      url: new URL(`https://tigran-mariam.wedding/${locale}`),
       images: '/TM.png',
     },
     twitter: {
