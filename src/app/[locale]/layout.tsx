@@ -11,10 +11,10 @@ import type { Locale } from '@/locales';
 
 import './globals.css';
 
-export type LocalProps = { locale: Locale };
+export type LocaleProps = { locale: Locale };
 
 export type RootLayoutProps = PropsWithChildren & {
-  params: LocalProps;
+  params: LocaleProps;
 };
 
 export async function generateMetadata({
