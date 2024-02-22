@@ -6,7 +6,7 @@ import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 import clsx from 'clsx';
 
-import { localeFont, font_variables } from '@/locales';
+import { localeFont, font_variables, locales } from '@/locales';
 import type { Locale } from '@/locales';
 
 import './globals.css';
@@ -23,12 +23,25 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
   return {
-    metadataBase: new URL(`https://tigran-mariam.wedding`),
+    metadataBase: new URL('https://tigran-mariam.wedding'),
     title: t('title'),
     description: t('description'),
+    alternates: {
+      canonical: '/',
+      languages: {
+        en: '/en',
+        ru: '/ru',
+        hy: '/hy',
+      },
+    },
     openGraph: {
+      locale,
+      alternateLocale: locales,
+      type: 'website',
+      siteName: t('title'),
       title: t('title'),
       description: t('description'),
+      url: new URL(`https://tigran-mariam.wedding/${locale}`),
       images: '/TM.png',
     },
     twitter: {
