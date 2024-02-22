@@ -17,22 +17,26 @@ export type RootLayoutProps = PropsWithChildren & {
   params: LocaleProps;
 };
 
-export async function generateMetadata(
-  { params: { locale } }: Pick<RootLayoutProps, 'params'>,
-  parent: ResolvingMetadata,
-): Promise<Metadata> {
+export async function generateMetadata({
+  params: { locale },
+}: Pick<RootLayoutProps, 'params'>): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'Metadata' });
-  const previousImages = (await parent).openGraph?.images || [];
 
   return {
+    metadataBase: new URL('https://tigran-mariam.wedding'),
     title: t('title'),
     description: t('description'),
     openGraph: {
+      locale,
       type: 'website',
       title: t('title'),
       description: t('description'),
-      url: `https://tigran-mariam.wedding/${locale}`,
-      images: ['/TM.svg', ...previousImages],
+      images: '/TM.png',
+    },
+    twitter: {
+      title: t('title'),
+      description: t('description'),
+      images: '/TM.png',
     },
   };
 }
