@@ -24,21 +24,9 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(`https://tigran-mariam.wedding`),
-    title: {
-      default: t('title'),
-      template: '',
-    },
+    title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: '/',
-      languages: {
-        en: '/en',
-        ru: '/ru',
-        hy: '/hy',
-      },
-    },
     openGraph: {
-      type: 'website',
       title: t('title'),
       description: t('description'),
       images: '/TM.png',
