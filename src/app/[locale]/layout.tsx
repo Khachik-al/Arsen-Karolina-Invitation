@@ -28,7 +28,11 @@ export async function generateMetadata(
     title: t('title'),
     description: t('description'),
     openGraph: {
-      images: ['/icon.svg', ...previousImages],
+      type: 'website',
+      title: t('title'),
+      description: t('description'),
+      url: `https://tigran-mariam.wedding/${locale}`,
+      images: ['/TM.svg', ...previousImages],
     },
   };
 }
