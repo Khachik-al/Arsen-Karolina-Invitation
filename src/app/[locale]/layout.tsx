@@ -23,14 +23,24 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
   return {
-    metadataBase: new URL('https://tigran-mariam.wedding'),
+    metadataBase: new URL(`https://tigran-mariam.wedding/${locale}`),
     title: t('title'),
     description: t('description'),
+    alternates: {
+      canonical: '/',
+      languages: {
+        en: '/en',
+        ru: '/ru',
+        hy: '/hy',
+      },
+    },
     openGraph: {
       locale,
       type: 'website',
+      siteName: t('title'),
       title: t('title'),
       description: t('description'),
+      url: new URL(`https://tigran-mariam.wedding/${locale}`),
       images: '/TM.png',
     },
     twitter: {
