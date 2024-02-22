@@ -23,6 +23,6 @@ export const specialPlacesNames: PlacesNames[] = [
 ] as const;
 
 export const places_address_urls: Partial<PlacesAddressUrlType> = {
-  wedding_ceremony: 'https://tigran-mariam.wedding/am',
-  wedding_party: 'https://tigran-mariam.wedding/am',
+  wedding_ceremony: 'https://tigran-mariam.wedding/hy',
+  wedding_party: 'https://tigran-mariam.wedding/hy',
 };

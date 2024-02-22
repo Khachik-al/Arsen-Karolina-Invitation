@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from 'react';
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 
 import { getTranslations } from 'next-intl/server';
 import { NextIntlClientProvider, useMessages } from 'next-intl';

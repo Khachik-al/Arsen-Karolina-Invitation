@@ -12,7 +12,7 @@ import {
 } from '@/fonts';
 
 export type LocaleFont = {
-  am: NextFont['className'];
+  hy: NextFont['className'];
   ru: NextFont['className'];
   en: NextFont['className'];
 };
@@ -20,7 +20,7 @@ export type LocaleFont = {
 export type Locale = keyof LocaleFont;
 
 export const localeFont: LocaleFont = {
-  am: montserrat_arm.className,
+  hy: montserrat_arm.className,
   en: inter.className,
   ru: deja_vu_serif_condensed.className,
 };
@@ -34,4 +34,4 @@ export const font_variables = clsx(
   deja_vu_serif_condensed.variable,
 );
 
-export const locales: Locale[] = ['en', 'ru', 'am'];
+export const locales: Locale[] = ['en', 'ru', 'hy'];

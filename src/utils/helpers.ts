@@ -17,7 +17,7 @@ export const getCoreMessages = async ({ locale }: Pick<GetInvitationPlacesArg, '
 };
 
 export async function getInvitationPlaces({
-  locale = 'am',
+  locale = 'hy',
   special = false,
 }: GetInvitationPlacesArg): Promise<InvitationPlacesCardType[]> {
   const messages = await getCoreMessages({ locale });
