@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from 'react';
-import type { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 
 import { getTranslations } from 'next-intl/server';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
@@ -17,14 +17,19 @@ export type RootLayoutProps = PropsWithChildren & {
   params: LocaleProps;
 };
 
-export async function generateMetadata({
-  params: { locale },
-}: Pick<RootLayoutProps, 'params'>): Promise<Metadata> {
+export async function generateMetadata(
+  { params: { locale } }: Pick<RootLayoutProps, 'params'>,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'Metadata' });
+  const previousImages = (await parent).openGraph?.images || [];
 
   return {
     title: t('title'),
     description: t('description'),
+    openGraph: {
+      images: ['/icon.svg', ...previousImages],
+    },
   };
 }
 
