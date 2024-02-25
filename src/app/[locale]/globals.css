@@ -22,3 +22,81 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.invitation_background {
+  background-image: url('/images/background/test.jpeg'), url('/images/background/test_1.jpeg');
+  background-color: #FFFFFF;
+  background-position: left 24px top 24px, right 24px bottom 24px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 41%;
+}
+
+@media screen and (max-width: 500px) {
+  .invitation_background {
+    background-size: 80%;
+  }
+}
+
+.agreement-input-container {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.agreement-input-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+span.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #262534;
+}
+
+/* On mouse-over, add a grey background color */
+.agreement-input-container:hover input ~ span.checkmark {
+  background-color: transparent;
+}
+
+/* When the radio button is checked, add a blue background */
+.agreement-input-container input:checked ~ span.checkmark {
+  background-color: transparent;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+span.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.agreement-input-container input:checked ~ span.checkmark:after {
+  display: inline;
+}
+
+/* Style the indicator (dot/circle) */
+.agreement-input-container span.checkmark:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #262534;
+}

@@ -1,8 +1,9 @@
+import type { RootLayoutProps } from '@/app/[locale]/layout';
+
 import Invitation from '@/components/Invitation';
 import WeddingDate from '@/components/WeddingDate';
 import InvitationPlaces from '@/components/InvitationPlaces';
-
-import type { RootLayoutProps } from '@/app/[locale]/layout';
+import InvitationForm from '@/components/InvitationForm';
 
 import { getInvitationPlaces } from '@/utils/helpers';
 
@@ -14,6 +15,7 @@ export default async function Home({ params: { locale } }: Pick<RootLayoutProps,
       <Invitation />
       <WeddingDate />
       <InvitationPlaces places={places} />
+      <InvitationForm />
     </div>
   );
 }

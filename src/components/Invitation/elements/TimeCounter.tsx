@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
 import dayjs from 'dayjs';
+import 'dayjs/locale/hy-am';
 import plugin_duration from 'dayjs/plugin/duration';
 import type { Duration } from 'dayjs/plugin/duration';
 
@@ -26,22 +27,22 @@ export default function TimeCounter() {
   if (duration.as('days') === 0) return null;
 
   return (
-    <div className="flex items-center gap-[20px]">
-      <div className="flex flex-col items-center gap-[5px] pe-[20px] border-r-[1px] border-solid border-[#FFFFFF]/50 min-w-[130px]">
-        <span className="text-6xl font-medium">{Math.floor(duration.as('days'))}</span>
-        <span className="font-light">{t('days')}</span>
+    <div className="flex items-center">
+      <div className="flex flex-col items-center lg:gap-[5px] lg:pe-[20px] border-r-[1px] border-solid border-[#FFFFFF]/50 min-w-[86px] lg:min-w-[130px]">
+        <span className="text-3xl lg:text-6xl font-medium">{Math.floor(duration.as('days'))}</span>
+        <span className="text-sm lg:text-base font-light">{t('days')}</span>
       </div>
-      <div className="flex flex-col items-center gap-[5px] pe-[20px] border-r-[1px] border-solid border-[#FFFFFF]/50 min-w-[130px]">
-        <span className="text-6xl font-medium">{duration.hours()}</span>
-        <span className="font-light">{t('hours')}</span>
+      <div className="flex flex-col items-center gap-[5px] lg:px-[20px] border-r-[1px] border-solid border-[#FFFFFF]/50 min-w-[86px] lg:min-w-[130px]">
+        <span className="text-3xl lg:text-6xl font-medium">{duration.hours()}</span>
+        <span className="text-sm lg:text-base font-light">{t('hours')}</span>
       </div>
-      <div className="flex flex-col items-center gap-[5px] pe-[20px] border-r-[1px] border-solid border-[#FFFFFF]/50 min-w-[130px]">
-        <span className="text-6xl font-medium">{duration.minutes()}</span>
-        <span className="font-light">{t('minutes')}</span>
+      <div className="flex flex-col items-center lg:gap-[5px] lg:px-[20px] border-r-[1px] border-solid border-[#FFFFFF]/50 min-w-[86px] lg:min-w-[130px]">
+        <span className="text-3xl lg:text-6xl font-medium">{duration.minutes()}</span>
+        <span className="text-sm lg:text-base font-light">{t('minutes')}</span>
       </div>
-      <div className="flex flex-col items-center gap-[5px] pe-[20px] min-w-[130px]">
-        <span className="text-6xl font-medium">{duration.seconds()}</span>
-        <span className="font-light">{t('seconds')}</span>
+      <div className="flex flex-col items-center lg:gap-[5px] min-w-[86px] lg:min-w-[130px]">
+        <span className="text-3xl lg:text-6xl font-medium">{duration.seconds()}</span>
+        <span className="text-sm lg:text-base font-light">{t('seconds')}</span>
       </div>
     </div>
   );
