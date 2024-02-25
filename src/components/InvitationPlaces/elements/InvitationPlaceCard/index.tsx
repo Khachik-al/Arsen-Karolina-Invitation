@@ -14,7 +14,7 @@ export default function InvitationPlaceCard({ place }: InvitationPlaceCardProps)
   return (
     <div className="flex flex-col gap-[10px] items-center justify-center">
       <Image src={place.src} alt={place.place_name} width={300} height={300} priority />
-      <span>{place.invitation_name}</span>
+      <span className="font-vrdznagir text-2xl">{place.invitation_name}</span>
       <span>{place.time}</span>
       <span>{place.place_name}</span>
       <span>{place.place_address}</span>

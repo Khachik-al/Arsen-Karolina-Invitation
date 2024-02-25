@@ -19,15 +19,15 @@
   "InvitationPlaces": {
     "how_to_get_there": "Ինչպես հասնել",
     "wedding_ceremony": {
-      "invitation_name": "wedding_ceremony-invitation_name",
-      "time": "wedding_ceremony-time",
-      "place_name": "wedding_ceremony-place_name",
+      "invitation_name": "Պսակադրության արարողություն",
+      "time": "14:30",
+      "place_name": "Սուրբ Զորավոր եկեղեցի",
       "place_address": "wedding_ceremony-place_address"
     },
     "wedding_party": {
-      "invitation_name": "wedding_party-invitation_name",
-      "time": "wedding_party-time",
-      "place_name": "wedding_party-place_name",
+      "invitation_name": "Հարսանյաց հանդիսություն",
+      "time": "18:00",
+      "place_name": "Վիվալդի Հոլ",
       "place_address": "wedding_party-place_address"
     }
   }

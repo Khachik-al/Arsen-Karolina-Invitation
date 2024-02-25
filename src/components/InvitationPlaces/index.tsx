@@ -9,7 +9,7 @@ export type InvitationPlacesProps = {
 
 export default function InvitationPlaces({ places }: InvitationPlacesProps) {
   return (
-    <div className="flex items-center justify-center flex-col gap-[30px] py-[30px] bg-sky-100">
+    <div className="flex items-center justify-center flex-col gap-[30px] py-[30px] bg-[#b0b0b0]">
       {places.map(place => (
         <InvitationPlaceCard key={place.place_name} place={place} />
       ))}
