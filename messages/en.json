@@ -13,22 +13,20 @@
     "seconds": "Seconds"
   },
   "WeddingDate": {
-    "invitation_text": "Սիրով հրավիրում ենք Ձեզ կիսելու մեզ հետ մեր կյանքի կարևոր և հիշարժան օրը",
-    "date": "15th June, 2024"
+    "invitation_text": "Dear Friends, A beautiful celebration is awaited in our lives. We are forming a family and inviting you to join us on one of the most significant days of our lives. We are thrilled to extend our invitation to you for our upcoming wedding ceremony, which will take place",
+    "date": "15th June 2024"
   },
   "InvitationPlaces": {
-    "how_to_get_there": "how_to_get_there",
+    "how_to_get_there": "How to reach",
     "wedding_ceremony": {
-      "invitation_name": "wedding_ceremony-invitation_name",
-      "time": "wedding_ceremony-time",
-      "place_name": "wedding_ceremony-place_name",
-      "place_address": "wedding_ceremony-place_address"
+      "invitation_name": "Wedding ceremony",
+      "time": "14:30",
+      "place_name": "Saint Mother of God the Mighty Church"
     },
     "wedding_party": {
-      "invitation_name": "wedding_party-invitation_name",
-      "time": "wedding_party-time",
-      "place_name": "wedding_party-place_name",
-      "place_address": "wedding_party-place_address"
+      "invitation_name": "Wedding party",
+      "time": "18:00",
+      "place_name": "Vivaldi Hall"
     }
   }
 }

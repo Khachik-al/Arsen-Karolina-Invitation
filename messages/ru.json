@@ -4,8 +4,8 @@
     "description": "Мы с радостью приглашаем вас разделить с нами важный и памятный день в нашей жизни."
   },
   "Invitation": {
-    "Tigran": "Տիգրան",
-    "Mariam": "Մարիամ",
+    "Tigran": "Тигран",
+    "Mariam": "Мариам",
     "wedding_time_left": "Осталось до момента, когда станем семьей",
     "days": "Дней",
     "hours": "Часов",
@@ -13,22 +13,20 @@
     "seconds": "Секунд"
   },
   "WeddingDate": {
-    "invitation_text": "Սիրով հրավիրում ենք Ձեզ կիսելու մեզ հետ մեր կյանքի կարևոր և հիշարժան օրը",
+    "invitation_text": "Этот день в текущем году приобретает для нас особое значение, и мы бы хотели отметить его в компании наших близких и друзей! Мы с большим удовольствием приглашаем вас на наше свадебное торжество, которое состоится",
     "date": "15 Июня 2024"
   },
   "InvitationPlaces": {
-    "how_to_get_there": "Ինչպես հասնել",
+    "how_to_get_there": "Как Добраться",
     "wedding_ceremony": {
-      "invitation_name": "wedding_ceremony-invitation_name",
-      "time": "wedding_ceremony-time",
-      "place_name": "wedding_ceremony-place_name",
-      "place_address": "wedding_ceremony-place_address"
+      "invitation_name": "Свадебная Церемония",
+      "time": "14:30",
+      "place_name": "Церковь Зоравор Святой Богородицы"
     },
     "wedding_party": {
-      "invitation_name": "wedding_party-invitation_name",
-      "time": "wedding_party-time",
-      "place_name": "wedding_party-place_name",
-      "place_address": "wedding_party-place_address"
+      "invitation_name": "Сбадебный Банкет",
+      "time": "18:00",
+      "place_name": "Vivaldi Hall"
     }
   }
 }
