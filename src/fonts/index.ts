@@ -83,9 +83,9 @@ export const deja_vu_serif_condensed = localFont({
   variable: '--font-deja-vu-serif-condensed',
 });
 
-export const czizh = localFont({
-  src: '../assets/fonts/russian/Czizh/Czizh-Body.ttf',
-  variable: '--font-czizh-body',
+export const pompadur = localFont({
+  src: '../assets/fonts/russian/Pompadur/Pompadur.ttf',
+  variable: '--font-pompadur',
 });
 
 export const ananda_black = localFont({
