@@ -2,7 +2,6 @@ import { useTranslations } from 'next-intl';
 
 import type { InvitationPlacesCardType } from '@/utils/constants';
 import InvitationPlaceCard from '@/components/InvitationPlaces/elements/InvitationPlaceCard';
-import MotionDiv from '@/components/animation/MotionDiv';
 
 export type InvitationPlacesProps = {
   places: InvitationPlacesCardType[];
