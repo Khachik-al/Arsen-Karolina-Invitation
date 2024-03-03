@@ -1,6 +1,8 @@
 import type { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 
+import { redirect } from 'next/navigation';
+
 import { getTranslations } from 'next-intl/server';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 
@@ -43,6 +45,8 @@ export async function generateMetadata({
 }
 
 export default function RootLayout({ children, params: { locale } }: Readonly<RootLayoutProps>) {
+  if (!locales.includes(locale)) redirect('/hy');
+
   const messages = useMessages();
 
   return (

@@ -29,8 +29,7 @@ body {
   background-position: top center;
   background-color: #FFFFFF;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-
+  background-attachment: scroll;
 }
 
 @media screen and (min-width: 1024px) {
@@ -38,6 +37,7 @@ body {
     background-image: url('/images/background/TM-1.jpeg'), url('/images/background/TM-2.jpeg');
     background-position: left 24px top 24px, right 24px bottom 24px;
     background-size: 41%;
+    background-attachment: fixed;
   }
 }
 

@@ -30,7 +30,6 @@ export async function getInvitationPlaces({
     invitation_name: t(`${place}.invitation_name`),
     time: t(`${place}.time`),
     place_name: t(`${place}.place_name`),
-    place_address: t(`${place}.place_address`),
     place_address_url: places_address_urls[place],
   }));
 }

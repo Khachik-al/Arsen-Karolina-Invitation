@@ -93,4 +93,9 @@ export const ananda_black = localFont({
   variable: '--font-ananda-black',
 });
 
+export const beauty_hand_writting_regular = localFont({
+  src: '../assets/fonts/english/BeautyHandwritingRegular/BeautyHandwritingRegular.ttf',
+  variable: '--font-beauty-hand-writing-regular',
+});
+
 export const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });

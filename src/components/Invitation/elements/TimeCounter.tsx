@@ -16,9 +16,6 @@ export default function TimeCounter() {
   const [duration, setDuration] = useState<Duration>(dayjs.duration(0));
   const now = dayjs();
   const wedding_date = dayjs('2024-06-15 14:30:00');
-  console.log(wedding_date)
-  console.log(now)
-  console.log(duration)
 
   useEffect(() => {
     const interval = setInterval(() => setDuration(dayjs.duration(wedding_date.diff(now))), 1000);

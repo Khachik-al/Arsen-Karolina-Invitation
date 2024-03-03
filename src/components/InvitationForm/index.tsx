@@ -49,7 +49,7 @@ export default function InvitationForm() {
   };
 
   return (
-    <div className="flex justify-center pb-8">
+    <div className="flex justify-center py-8">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-[20px] px-[20px] w-[100%] px-10 sm:w-[auto] sm:min-w-[500px] md:min-w-[600px] lg:min-w-[700px] xl:min-w-[800px]"

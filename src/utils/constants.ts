@@ -3,7 +3,6 @@ export type InvitationPlacesCardType = {
   invitation_name: string;
   time: string;
   place_name: string;
-  place_address: string;
   place_address_url: string;
 };
 

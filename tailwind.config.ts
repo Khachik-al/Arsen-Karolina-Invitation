@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         inter: ['var(--font-inter)'],
         ananda_black: ['var(--font-ananda-black)'],
+        beauty_hand_writing: ['var(--font-beauty-hand-writing-regular)'],
         montserrat_arm: ['var(--font-montserrat-arm)'],
         vrdznagir: ['var(--font-arm-vrdznagir)'],
         czizh_body: ['var(--font-czizh-body)'],

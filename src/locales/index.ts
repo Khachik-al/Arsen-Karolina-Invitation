@@ -9,6 +9,7 @@ import {
   czizh,
   deja_vu_serif_condensed,
   ananda_black,
+  beauty_hand_writting_regular,
 } from '@/fonts';
 
 export type LocaleFont = {
@@ -32,6 +33,7 @@ export const font_variables = clsx(
   czizh.variable,
   ananda_black.variable,
   deja_vu_serif_condensed.variable,
+  beauty_hand_writting_regular.variable,
 );
 
 export const locales: Locale[] = ['en', 'ru', 'hy'];

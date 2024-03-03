@@ -13,7 +13,7 @@ export default async function Home({ params: { locale } }: Pick<RootLayoutProps,
   return (
     <div>
       <Invitation />
-      <WeddingDate />
+      <WeddingDate locale={locale} />
       <InvitationPlaces places={places} />
       <InvitationForm />
     </div>
