@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     });
 
     if (error) {
-      return Response.json({ ...error }, { status: error.statusCode });
+      return Response.json({ ...error }, { status: 400 });
     }
 
     return Response.json({ data });
