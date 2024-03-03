@@ -24,17 +24,20 @@ body {
 }
 
 .invitation_background {
-  background-image: url('/images/background/test.jpeg'), url('/images/background/test_1.jpeg');
+  background-image: url('/images/background/TM-1.jpeg');
+  background-size: cover;
+  background-position: top center;
   background-color: #FFFFFF;
-  background-position: left 24px top 24px, right 24px bottom 24px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 41%;
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 1024px) {
   .invitation_background {
-    background-size: 80%;
+    background-image: url('/images/background/TM-1.jpeg'), url('/images/background/TM-2.jpeg');
+    background-position: left 24px top 24px, right 24px bottom 24px;
+    background-size: 41%;
   }
 }
 

@@ -1,16 +1,6 @@
-import type { CSSProperties } from 'react';
 import { useTranslations } from 'next-intl';
 
-// import background from '../../../public/images/background/test.jpeg';
 import TimeCounter from '@/components/Invitation/elements/TimeCounter';
-
-// const InvitationBackground: CSSProperties = {
-//   backgroundImage: `url(${background.src})`,
-//   backgroundPosition: 'top center',
-//   backgroundRepeat: 'no-repeat',
-//   backgroundAttachment: 'fixed',
-//   backgroundSize: 'cover',
-// };
 
 export default function Invitation() {
   const t = useTranslations('Invitation');
