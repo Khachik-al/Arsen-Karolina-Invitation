@@ -29,5 +29,12 @@
       "time": "18:00",
       "place_name": "Vivaldi Hall"
     }
+  },
+  "InvitationForm": {
+    "attend": "Attend",
+    "not_attend": "Not attend",
+    "name_surname": "Name Surname",
+    "add_member": "Add member",
+    "submit": "Submit"
   }
 }

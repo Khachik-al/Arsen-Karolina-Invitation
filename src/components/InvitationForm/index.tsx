@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { useFieldArray, useForm } from 'react-hook-form';
 import type { SubmitHandler } from 'react-hook-form';
 
@@ -13,6 +15,8 @@ export type FVAgreement = {
 };
 
 export default function InvitationForm() {
+  const t = useTranslations('InvitationForm');
+
   const {
     register,
     handleSubmit,
@@ -61,7 +65,7 @@ export default function InvitationForm() {
           >
             <input {...register('agreement')} type="radio" value="attend" id="field-attend" />
             <span className="checkmark" />
-            <span>Attend</span>
+            <span>{t('attend')}</span>
           </label>
           <label
             htmlFor="field-not-attend"
@@ -74,7 +78,7 @@ export default function InvitationForm() {
               id="field-not-attend"
             />
             <span className="checkmark" />
-            <span>Not attend</span>
+            <span>{t('not_attend')}</span>
           </label>
         </div>
         <div className="flex flex-col gap-[10px]">
@@ -86,7 +90,7 @@ export default function InvitationForm() {
                   required: true,
                 })}
                 type="text"
-                placeholder="Name Surname"
+                placeholder={t('name_surname')}
                 className="w-full outline-0 border-b-[2px] border-solid border-[#000000] py-[10px]"
               />
             );
@@ -98,14 +102,14 @@ export default function InvitationForm() {
               append([{ name_surname: '' }]);
             }}
           >
-            Add member
+            {t('add_member')}
           </button>
         </div>
         <button
           type="submit"
           className="w-fit self-center outline-0 border-[2px] border-solid border-[#000000] rounded-[30px] px-[30px] mt-[40px] py-[10px]"
         >
-          Submit
+          {t('submit')}
         </button>
       </form>
     </div>
