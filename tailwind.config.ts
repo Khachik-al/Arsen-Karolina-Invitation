@@ -14,7 +14,7 @@ const config: Config = {
         beauty_hand_writing: ['var(--font-beauty-hand-writing-regular)'],
         montserrat_arm: ['var(--font-montserrat-arm)'],
         vrdznagir: ['var(--font-arm-vrdznagir)'],
-        pompadur: ['var(--font-pompadur-body)'],
+        pompadur: ['var(--font-pompadur)'],
         deja_vu_serif_condensed: ['var(--font-deja-vu-serif-condensed)'],
       },
       backgroundImage: {
