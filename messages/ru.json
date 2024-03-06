@@ -18,7 +18,7 @@
   },
   "InvitationPlaces": {
     "how_to_get_there": "Как Добраться",
-    "waiting_with_love": "Սիրով սպասում ենք ձեզ",
+    "waiting_with_love": "С любовью ждем Вас",
     "wedding_ceremony": {
       "invitation_name": "Свадебная Церемония",
       "time": "14:30",
@@ -31,10 +31,10 @@
     }
   },
   "InvitationForm": {
-    "attend": "Attend",
-    "not_attend": "Not attend",
-    "name_surname": "Name Surname",
-    "add_member": "Add member",
-    "submit": "Submit"
+    "attend": "Приеду",
+    "not_attend": "Не смогу",
+    "name_surname": "Имя Фамилия",
+    "add_member": "Добавить Гостя",
+    "submit": "Отправить"
   }
 }

@@ -18,7 +18,7 @@
   },
   "InvitationPlaces": {
     "how_to_get_there": "Ինչպես հասնել",
-    "waiting_with_love": "Սիրով սպասում ենք ձեզ",
+    "waiting_with_love": "Սիրով սպասում ենք Ձեզ",
     "wedding_ceremony": {
       "invitation_name": "Պսակադրության արարողություն",
       "time": "14:30",
@@ -31,10 +31,10 @@
     }
   },
   "InvitationForm": {
-    "attend": "Attend",
-    "not_attend": "Not attend",
-    "name_surname": "Name Surname",
-    "add_member": "Add member",
-    "submit": "Submit"
+    "attend": "Կգամ",
+    "not_attend": "Չեմ կարող գալ",
+    "name_surname": "Անուն Ազգանուն",
+    "add_member": "Ավելացնել Հյուր",
+    "submit": "Ուղարկել"
   }
 }

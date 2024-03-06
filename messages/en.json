@@ -18,7 +18,7 @@
   },
   "InvitationPlaces": {
     "how_to_get_there": "How to reach",
-    "waiting_with_love": "Սիրով սպասում ենք ձեզ",
+    "waiting_with_love": "We hope to see you there!",
     "wedding_ceremony": {
       "invitation_name": "Wedding ceremony",
       "time": "14:30",
@@ -31,10 +31,10 @@
     }
   },
   "InvitationForm": {
-    "attend": "Attend",
-    "not_attend": "Not attend",
+    "attend": "Will Attend",
+    "not_attend": "Cannot Attend",
     "name_surname": "Name Surname",
-    "add_member": "Add member",
+    "add_member": "Add Guest",
     "submit": "Submit"
   }
 }
