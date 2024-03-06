@@ -1,19 +1,12 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-
 import { Ru, Us, Am } from 'react-flags-select';
-import type { OnSelect } from 'react-flags-select/build/types';
 
-import { useRouter, usePathname } from '@/navigation';
+import { usePathname, Link } from '@/navigation';
 
-import { LocaleProps } from '@/app/[locale]/layout';
-
-const selectedCode = {
-  en: 'US',
-  ru: 'RU',
-  hy: 'AM',
-};
+import type { LocaleProps } from '@/app/[locale]/layout';
+import { locales } from '@/locales';
+import clsx from 'clsx';
 
 const selectedFlags = {
   en: <Us />,
@@ -21,32 +14,21 @@ const selectedFlags = {
   hy: <Am />,
 };
 
-const changedLocale = {
-  US: 'en',
-  RU: 'ru',
-  AM: 'hy',
-};
-
 export default function LocaleChange({ locale }: LocaleProps) {
-  const ReactFlagsSelect = dynamic(() => import('react-flags-select'), {
-    ssr: false,
-    loading: () => selectedFlags[locale],
-  });
-  const router = useRouter();
   const pathname = usePathname();
 
-  const onSelect: OnSelect = code => {
-    router.replace(pathname, { locale: changedLocale[code] });
-  };
-
   return (
-    <div className="absolute top-[10px] right-[10px] font-inter">
-      <ReactFlagsSelect
-        countries={['US', 'RU', 'AM']}
-        customLabels={{ US: 'English', RU: 'Русский', AM: 'Հայերեն' }}
-        selected={selectedCode[locale]}
-        onSelect={onSelect}
-      />
+    <div className="absolute flex align-center gap-[10px] top-[10px] right-[10px] font-inter">
+      {locales.map(loc => (
+        <Link
+          key={loc}
+          href={pathname}
+          locale={loc}
+          className={clsx(locale === loc && 'opacity-50')}
+        >
+          {selectedFlags[loc]}
+        </Link>
+      ))}
     </div>
   );
 }
