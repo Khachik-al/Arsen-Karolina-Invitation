@@ -25,6 +25,9 @@ export async function POST(request: Request) {
 
     return Response.json({ message: 'Email sent successfully' }, { status: 200 });
   } catch (error) {
-    return Response.json({ ...error }, { status: error.status ?? 500 });
+    return Response.json(
+      { ...(error as Record<string, unknown>) },
+      { status: error.status ?? 500 },
+    );
   }
 }
