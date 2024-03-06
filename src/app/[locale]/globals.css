@@ -24,9 +24,9 @@ body {
 }
 
 .invitation_background {
-  background-image: url('/images/background/TM-2.jpeg');
+  background-image: url('/images/background/TM-3.JPG');
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-attachment: scroll;
