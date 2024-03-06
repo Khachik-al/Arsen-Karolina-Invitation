@@ -36,4 +36,4 @@ export const font_variables = clsx(
   beauty_hand_writting_regular.variable,
 );
 
-export const locales: Locale[] = ['en', 'ru', 'hy'];
+export const locales: Locale[] = ['hy', 'ru', 'en'];
