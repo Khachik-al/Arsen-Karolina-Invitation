@@ -40,13 +40,10 @@ export default function InvitationForm() {
 
   const onSubmit: SubmitHandler<FVAgreement> = async data => {
     try {
-      const res = await fetch('/api/send-agreement', {
+      await fetch('/api/send-agreement', {
         method: 'POST',
         body: JSON.stringify(data),
       });
-      const invitation_res = await res.json();
-
-      console.log(invitation_res, 'invitation_res');
     } catch (e) {
       console.log('error ======>', e);
     }
@@ -95,15 +92,17 @@ export default function InvitationForm() {
               />
             );
           })}
-          <button
-            type="button"
-            className="w-fit outline-0 border-[2px] border-solid border-[#000000] rounded-[30px] px-[30px] mt-[40px] py-[10px]"
-            onClick={() => {
-              append([{ name_surname: '' }]);
-            }}
-          >
-            {t('add_member')}
-          </button>
+          {fields.length < 2 && (
+            <button
+              type="button"
+              className="w-fit outline-0 border-[2px] border-solid border-[#000000] rounded-[30px] px-[30px] mt-[40px] py-[10px]"
+              onClick={() => {
+                append([{ name_surname: '' }]);
+              }}
+            >
+              {t('add_member')}
+            </button>
+          )}
         </div>
         <button
           type="submit"
