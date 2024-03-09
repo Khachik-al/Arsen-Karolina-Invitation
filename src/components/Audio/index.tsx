@@ -4,8 +4,6 @@ import Image from 'next/image';
 
 import { useRef, useState } from 'react';
 
-import song from '@/assets/audio/aerosmith-i-don-t-want-to-miss-a-thing.mp3';
-
 const play_icon = <Image src="/images/audio/play.png" alt="play" width={45} height={45} />;
 const pause_icon = <Image src="/images/audio/pause.png" alt="play" width={45} height={45} />;
 
@@ -25,7 +23,7 @@ export default function Audio() {
         {isPlaying ? pause_icon : play_icon}
       </button>
       <audio ref={audioRef}>
-        <source src={song} type="audio/mpeg" />
+        <source src="/audio/aerosmith-i-don-t-want-to-miss-a-thing.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
     </div>
