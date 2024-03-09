@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import { useRef, useState } from 'react';
 
-import song from '@/audio/aerosmith-i-don-t-want-to-miss-a-thing.mp3';
+import song from '@/assets/audio/aerosmith-i-don-t-want-to-miss-a-thing.mp3';
 
 const play_icon = <Image src="/images/audio/play.png" alt="play" width={45} height={45} />;
 const pause_icon = <Image src="/images/audio/pause.png" alt="play" width={45} height={45} />;
