@@ -36,6 +36,7 @@
     "not_attend": "Չեմ կարող գալ",
     "name_surname": "Անուն Ազգանուն",
     "add_member": "Ավելացնել Հյուր",
-    "submit": "Ուղարկել"
+    "submit": "Ուղարկել",
+    "success_message": "Շնորհակալություն"
   }
 }

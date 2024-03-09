@@ -36,6 +36,7 @@
     "not_attend": "Cannot Attend",
     "name_surname": "Name Surname",
     "add_member": "Add Guest",
-    "submit": "Submit"
+    "submit": "Submit",
+    "success_message": "Շնորհակալություն"
   }
 }

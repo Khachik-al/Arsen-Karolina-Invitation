@@ -15,7 +15,7 @@ export default async function Home({ params: { locale } }: Pick<RootLayoutProps,
       <Invitation locale={locale} />
       <WeddingDate locale={locale} />
       <InvitationPlaces places={places} />
-      <InvitationForm />
+      <InvitationForm locale={locale} />
     </div>
   );
 }

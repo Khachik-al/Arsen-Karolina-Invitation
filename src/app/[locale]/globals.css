@@ -24,7 +24,7 @@ body {
 }
 
 .invitation_background {
-  background-image: url('/images/background/TM-3.JPG');
+  background-image: url('/images/background/TM-small.JPG');
   background-size: cover;
   background-position: center;
   background-color: #FFFFFF;
@@ -34,9 +34,8 @@ body {
 
 @media screen and (min-width: 1024px) {
   .invitation_background {
-    background-image: url('/images/background/TM-1.jpeg'), url('/images/background/TM-2.jpeg');
-    background-position: left 24px top 24px, right 24px bottom 24px;
-    background-size: 41%;
+    background-image: url('/images/background/TM.JPEG');
+    background-size: cover;
     background-attachment: fixed;
   }
 }
@@ -102,4 +101,34 @@ span.checkmark:after {
   height: 12px;
   border-radius: 50%;
   background: #262534;
+}
+
+.locale-select-button.ReactFlagsSelect-module_selectBtn__19wW7 {
+  background: rgb(249 250 251);
+  border: none;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.locale-select-menu .ReactFlagsSelect-module_selectOptions__3LNBJ {
+  border: none;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.before-spinner {
+  color: black;
+  z-index: 999;
+  display: inline-block;
+  width: 1.35rem;
+  height: 1.35rem;
+  vertical-align: text-bottom;
+  border: 0.15rem solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
 }

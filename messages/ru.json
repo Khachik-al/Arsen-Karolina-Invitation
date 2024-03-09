@@ -36,6 +36,7 @@
     "not_attend": "Не смогу",
     "name_surname": "Имя Фамилия",
     "add_member": "Добавить Гостя",
-    "submit": "Отправить"
+    "submit": "Отправить",
+    "success_message": "Շնորհակալություն"
   }
 }
