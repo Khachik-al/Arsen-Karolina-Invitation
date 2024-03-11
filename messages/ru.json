@@ -6,7 +6,7 @@
   "Invitation": {
     "Tigran": "Тигран",
     "Mariam": "Мариам",
-    "wedding_time_left": "Осталось до момента, когда станем семьей",
+    "wedding_time_left": "Осталось до долгожданного момента, когда станем семьей",
     "days": "Дней",
     "hours": "Часов",
     "minutes": "Минут",
@@ -19,14 +19,14 @@
   "InvitationPlaces": {
     "how_to_get_there": "Как Добраться",
     "waiting_with_love": "С любовью ждем Вас",
-    "waiting_for_reply": "Կսպասենք ձեր պատասխանին մինչև Մայիսի 20-ը",
+    "waiting_for_reply": "Просьба заполнить анкету до 20-ого мая",
     "wedding_ceremony": {
       "invitation_name": "Свадебная Церемония",
       "time": "14:30",
       "place_name": "Церковь Зоравор Святой Богородицы"
     },
     "wedding_party": {
-      "invitation_name": "Сбадебный Банкет",
+      "invitation_name": "Свадебный Банкет",
       "time": "18:00",
       "place_name": "Vivaldi Hall"
     }
@@ -37,6 +37,6 @@
     "name_surname": "Имя Фамилия",
     "add_member": "Добавить Гостя",
     "submit": "Отправить",
-    "success_message": "Շնորհակալություն"
+    "success_message": "Спасибо"
   }
 }
