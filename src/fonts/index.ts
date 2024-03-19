@@ -22,7 +22,7 @@ export const armenian_scripted = localFont({
 });
 
 export const armenian_doctor = localFont({
-  src: '../assets/fonts/armenian/Doctor/doctor.otf',
+  src: '../assets/fonts/armenian/Doctor/Doctor.otf',
   variable: '--font-arm-doctor',
 });
 
