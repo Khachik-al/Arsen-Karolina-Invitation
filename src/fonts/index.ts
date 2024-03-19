@@ -6,6 +6,36 @@ export const armenian_vrdznagir = localFont({
   variable: '--font-arm-vrdznagir',
 });
 
+export const armenian_cosiarm = localFont({
+  src: '../assets/fonts/armenian/Cosiarm/CosiArm.ttf',
+  variable: '--font-arm-cosiarm',
+});
+
+export const armenian_tumanyan = localFont({
+  src: '../assets/fonts/armenian/Tumanyan/tumanyan.ttf',
+  variable: '--font-arm-tumanyan',
+});
+
+export const armenian_scripted = localFont({
+  src: '../assets/fonts/armenian/Script/scripted.ttf',
+  variable: '--font-arm-scripted',
+});
+
+export const armenian_doctor = localFont({
+  src: '../assets/fonts/armenian/Doctor/doctor.otf',
+  variable: '--font-arm-doctor',
+});
+
+export const armenian_victory = localFont({
+  src: '../assets/fonts/armenian/Victory/Victory.otf',
+  variable: '--font-arm-victory',
+});
+
+export const armenian_nasa = localFont({
+  src: '../assets/fonts/armenian/Nasa/Nasa.ttf',
+  variable: '--font-arm-nasa',
+});
+
 export const montserrat_arm = localFont({
   src: [
     {
