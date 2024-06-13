@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     });
 
     await transport.sendMail({
-      from: `Tigran & Mariam <${process.env.GMAIL_FROM_USER}>`,
+      from: `Name <${process.env.GMAIL_FROM_USER}>`,
       to: process.env.GMAIL_DESTINATION,
       subject: 'Wedding Invitation',
       html: render(<InvitationEmailTemplate {...body} />),

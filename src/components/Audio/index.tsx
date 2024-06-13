@@ -40,7 +40,7 @@ export default function Audio() {
       </button>
       <ArrowIcon isPlaying={isPlaying}/>
       <audio ref={audioRef}>
-        <source src="/audio/aerosmith-i-don-t-want-to-miss-a-thing.mp3" type="audio/mpeg" />
+        <source src="/audio/Razmik Amyan - Chuni Ashkharhe Qez Nman (2015).mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
     </div>

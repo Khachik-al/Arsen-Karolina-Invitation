@@ -139,9 +139,9 @@ export default function InvitationForm({ locale }: LocaleProps) {
           </div>
         </form>
       </div>
-      <div className="flex justify-center mt-2.5">
-        <Image src="/TM.png" alt="tigran-mariam" width={400} height={400} />
-      </div>
+      {/*<div className="flex justify-center mt-2.5">*/}
+      {/*  <Image src="/TM.png" alt="tigran-mariam" width={400} height={400} />*/}
+      {/*</div>*/}
     </>
   );
 }

@@ -1,12 +1,12 @@
 {
   "Metadata": {
-    "title": "Tigran & Mariam",
+    "title": "Levon & Armina",
     "description": "We cordially invite you to share with us the important and memorable day of our lives"
   },
   "Invitation": {
-    "Tigran": "Tigran",
-    "Mariam": "Mariam",
-    "title": "Tigran & Mariam",
+    "first_name": "Levon",
+    "second_name": "Armina",
+    "title": "Levon & Armina",
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",
@@ -14,16 +14,16 @@
   },
   "WeddingDate": {
     "invitation_text": "Dear Friends, A beautiful celebration is awaited in our lives. We are forming a family and inviting you to join us on one of the most significant days of our lives. We are thrilled to extend our invitation to you for our upcoming wedding ceremony, which will take place",
-    "date": "15th June 2024"
+    "date": "30th August 2024"
   },
   "InvitationPlaces": {
     "how_to_get_there": "How to reach",
     "waiting_with_love": "We hope to see you there!",
-    "waiting_for_reply": "Please, fill the blank by 1st of June",
+    "waiting_for_reply": "Please, fill the blank by 15th of August",
     "wedding_ceremony": {
       "invitation_name": "Wedding ceremony",
-      "time": "14:30",
-      "place_name": "Saint Mother of God the Mighty Church"
+      "time": "time",
+      "place_name": "Saghmosavank"
     },
     "wedding_party": {
       "invitation_name": "Wedding party",

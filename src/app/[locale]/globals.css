@@ -24,7 +24,7 @@ body {
 }
 
 .invitation_background {
-  background-image: url('/images/background/TM-small.JPG');
+  background-image: url('/images/background/LA.jpg');
   background-size: cover;
   background-position: center;
   background-color: #FFFFFF;
@@ -34,7 +34,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .invitation_background {
-    background-image: url('/images/background/TM.JPEG');
+    background-image: url('/images/background/wed-img.jpg');
     background-size: cover;
     background-attachment: fixed;
   }
