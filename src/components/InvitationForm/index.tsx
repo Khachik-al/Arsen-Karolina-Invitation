@@ -43,7 +43,6 @@ export default function InvitationForm({locale}: LocaleProps) {
   });
 
   const onSubmit: SubmitHandler<FVAgreement> = async data => {
-    console.log(data)
     try {
       await fetch('/api/send-agreement', {
         method: 'POST',
