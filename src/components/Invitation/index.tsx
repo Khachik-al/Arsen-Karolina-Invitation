@@ -19,7 +19,7 @@ export default function Invitation({ locale }: LocaleProps) {
         <div className="flex flex-col items-center gap-[18px]">
           <span className={clsx(
           'px-5 lg:p-0 text-center [text-shadow:_0_8px_8px_rgb(0_0_0_/_80%)]',
-          locale === 'hy' && 'text-5xl lg:text-5xl',
+          locale === 'hy' && 'text-4xl lg:text-5xl',
           locale === 'ru' && 'text-3xl lg:text-6xl font-pompadur',
           locale === 'en' && 'text-6xl lg:text-8xl font-beauty_hand_writing',
           )}>

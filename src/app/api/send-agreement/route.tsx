@@ -10,6 +10,7 @@ export async function POST(request: Request) {
   const body = (await request.json()) as FVAgreement;
 
   try {
+    console.log(body)
     const transport = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -19,9 +20,9 @@ export async function POST(request: Request) {
     });
 
     await transport.sendMail({
-      from: `Name <${process.env.GMAIL_FROM_USER}>`,
+      from: `Պատասխան <${process.env.GMAIL_FROM_USER}>`,
       to: process.env.GMAIL_DESTINATION,
-      subject: 'Wedding Invitation',
+      subject: 'Հարսանեկան հրավերքի պատասխան',
       html: render(<InvitationEmailTemplate {...body} />),
     });
 
