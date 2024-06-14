@@ -10,7 +10,6 @@ export async function POST(request: Request) {
   const body = (await request.json()) as FVAgreement;
 
   try {
-    console.log(body)
     const transport = nodemailer.createTransport({
       service: 'gmail',
       auth: {
