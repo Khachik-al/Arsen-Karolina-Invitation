@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     });
 
     await transport.sendMail({
-      from: `Պատասխան <${process.env.GMAIL_FROM_USER}>`,
+      from: `${body.guests[0].name_surname} <${process.env.GMAIL_FROM_USER}>`,
       to: process.env.GMAIL_DESTINATION,
       subject: 'Հարսանեկան հրավերքի պատասխան',
       html: render(<InvitationEmailTemplate {...body} />),
