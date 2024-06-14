@@ -1,13 +1,13 @@
-import { Html, Head, Font, Tailwind, Row, Column } from '@react-email/components';
+import {Column, Font, Head, Html, Row, Tailwind} from '@react-email/components';
 
-import type { FVAgreement } from '@/components/InvitationForm';
+import type {FVAgreement} from '@/components/InvitationForm';
 
 export type InvitationEmailTemplateProps = Readonly<FVAgreement>;
 
 export default function InvitationEmailTemplate({
-  agreement,
-  guests,
-}: InvitationEmailTemplateProps) {
+                                                  agreement,
+                                                  guests,
+                                                }: InvitationEmailTemplateProps) {
   return (
     <Html lang="en">
       <Head>
@@ -20,13 +20,12 @@ export default function InvitationEmailTemplate({
       </Head>
       <Tailwind>
         <Column>
-          <Row className="gap-1.5">
-            <Column>agree:</Column>
+          <Row className="gap-4">
             <Column>{agreement}</Column>
           </Row>
           <Row className="px-1">
             <Column>
-              {guests.map(({ name_surname }) => (
+              {guests.map(({name_surname}) => (
                 <Row key={name_surname}>{name_surname}</Row>
               ))}
             </Column>

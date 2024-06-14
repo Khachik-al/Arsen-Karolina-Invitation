@@ -19,7 +19,7 @@ export default function WeddingDate({ locale }: LocaleProps) {
         </span>
         <span
           className={clsx(
-            'text-[53px] lg:text-8xl leading-tight font-medium',
+            'text-[53px] lg:text-5xl leading-tight font-medium',
             locale === 'hy' && 'font-vrdznagir',
             locale === 'ru' && 'font-pompadur',
             locale === 'en' && 'font-beauty_hand_writing',
