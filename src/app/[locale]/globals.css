@@ -34,15 +34,15 @@ body {
 @media screen and (max-width: 1024px) {
   .invitation_background {
     background-image: url('/images/background/wed-img.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: contain; /* Ensure the whole image fits within the background */
+    background-attachment: scroll; /* Prevent fixed background issues on mobile */
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .invitation_background {
     background-image: url('/images/background/wed-img.jpg');
-    background-size: 45%;
+    background-size: 45%; /* Adjust to desired size */
     background-attachment: fixed;
   }
 }

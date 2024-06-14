@@ -50,9 +50,13 @@ export default function RootLayout({ children, params: { locale } }: Readonly<Ro
   const messages = useMessages();
 
   return (
-    <html lang={locale}>
-      <body className={clsx(localeFont[locale], font_variables)}>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+    <html lang={locale} >
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title></title>
+    </head>
+    <body className={clsx(localeFont[locale], font_variables)}>
+    <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
   );
