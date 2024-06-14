@@ -24,18 +24,25 @@ body {
 }
 
 .invitation_background {
-  background-image: url('/images/background/LA.jpg');
-  background-size: cover;
+  background-image: url('/images/background/wed-img.jpg');
   background-position: center;
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .invitation_background {
     background-image: url('/images/background/wed-img.jpg');
     background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .invitation_background {
+    background-image: url('/images/background/wed-img.jpg');
+    background-size: 45%;
     background-attachment: fixed;
   }
 }

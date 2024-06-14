@@ -22,6 +22,6 @@ export const specialPlacesNames: PlacesNames[] = [
 ] as const;
 
 export const places_address_urls: Partial<PlacesAddressUrlType> = {
-  wedding_ceremony: 'https://maps.app.goo.gl/ZuDmkcjMRqyri6q79',
-  wedding_party: 'https://maps.app.goo.gl/NNaGYPFW2jcTDTHKA',
+  wedding_ceremony: 'https://yandex.com/maps/org/monastery_saghmosavank/8680895053',
+  wedding_party: 'https://yandex.com/maps/org/vivaldi_hall/196505711765',
 };
