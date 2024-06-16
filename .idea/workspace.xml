@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bca584bc-662c-4729-84ec-a702af391daa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/audio/John-Legend–All-of-Me.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/background/levon-armina.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Audio/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Audio/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="bca584bc-662c-4729-84ec-a702af391daa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +31,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/user/Desktop/levon-armina-invitation",
+    "last_opened_file_path": "/Users/user/Desktop/levon-armina-invitation/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,6 +41,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718299021485</updated>
-      <workItem from="1718299022917" duration="23106000" />
+      <workItem from="1718299022917" duration="25708000" />
     </task>
     <servers />
   </component>
