@@ -24,7 +24,7 @@ body {
 }
 
 .invitation_background {
-  background-image: url('/images/background/wed-img.jpg');
+  background-image: url('/images/background/levon-armina.JPG');
   background-position: center;
   background-color: #FFFFFF;
   background-repeat: no-repeat;
@@ -33,16 +33,26 @@ body {
 
 @media screen and (max-width: 1024px) {
   .invitation_background {
-    background-image: url('/images/background/wed-img.jpg');
-    background-size: contain; /* Ensure the whole image fits within the background */
-    background-attachment: scroll; /* Prevent fixed background issues on mobile */
+    background-image: url('/images/background/levon-armina.JPG');
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: right;
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .invitation_background {
-    background-image: url('/images/background/wed-img.jpg');
-    background-size: 45%; /* Adjust to desired size */
+    background-image: url('/images/background/levon-armina.JPG');
+    background-size: 80%;
+    background-attachment: fixed;
+  }
+}
+
+
+@media screen and (min-width: 1400px) {
+  .invitation_background {
+    background-image: url('/images/background/levon-armina.JPG');
+    background-size: 60%;
     background-attachment: fixed;
   }
 }

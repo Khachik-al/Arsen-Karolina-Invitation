@@ -40,7 +40,7 @@ export default function Audio() {
       </button>
       <ArrowIcon isPlaying={isPlaying}/>
       <audio ref={audioRef}>
-        <source src="/audio/wedding-audio.mp3" type="audio/mpeg" />
+        <source src="/audio/John-Legend–All-of-Me.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
     </div>
