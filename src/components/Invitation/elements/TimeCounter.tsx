@@ -15,7 +15,7 @@ dayjs.extend(plugin_duration);
 export default function TimeCounter() {
   const t = useTranslations('Invitation');
 
-  const wedding_date = dayjs('2024-08-30 14:30:00');
+  const wedding_date = dayjs('2025-06-14 14:30:00');
   const [duration, setDuration] = useState<Duration>(dayjs.duration(0));
 
   useEffect(() => {

@@ -24,7 +24,7 @@ body {
 }
 
 .invitation_background {
-  background-image: url('/images/background/levon-armina.JPG');
+  background-image: url('/images/background/IMG_7703.jpg');
   background-position: center;
   background-color: #e8f0e9;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .invitation_background {
-    background-image: url('/images/background/levon-armina.JPG');
+    background-image: url('/images/background/IMG_7703.jpg');
     background-size: cover;
     background-attachment: scroll;
     background-position: right;
@@ -42,7 +42,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .invitation_background {
-    background-image: url('/images/background/levon-armina.JPG');
+    background-image: url('/images/background/IMG_7703.jpg');
     background-size: 80%;
     background-attachment: fixed;
   }
@@ -51,7 +51,7 @@ body {
 
 @media screen and (min-width: 1400px) {
   .invitation_background {
-    background-image: url('/images/background/levon-armina.JPG');
+    background-image: url('/images/background/IMG_7703.jpg');
     background-size: 60%;
     background-attachment: fixed;
   }
