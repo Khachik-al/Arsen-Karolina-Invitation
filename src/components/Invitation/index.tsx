@@ -13,7 +13,7 @@ export default function Invitation({ locale }: LocaleProps) {
 
   return (
     <div className="h-screen invitation_background">
-      <LocaleChange locale={locale} />
+      {/*<LocaleChange locale={locale} />*/}
       {/*<Audio />*/}
       <div className="h-full w-full bg-gradient-to-t from-[#000000]/40 to-[#000000]/0 flex flex-col justify-end items-center text-white gap-[35px] py-[30px]">
         <div className="flex flex-col items-center gap-[18px]">

@@ -36,7 +36,7 @@ body {
     background-image: url('/images/background/IMG_7703.jpg');
     background-size: cover;
     background-attachment: scroll;
-    background-position: right;
+    /*background-position: right;*/
   }
 }
 

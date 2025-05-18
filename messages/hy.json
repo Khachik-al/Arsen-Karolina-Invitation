@@ -19,15 +19,15 @@
   "InvitationPlaces": {
     "how_to_get_there": "Ինչպես հասնել",
     "waiting_with_love": "Սիրով սպասում ենք Ձեզ",
-    "waiting_for_reply": "Կսպասենք ձեր պատասխանին մինչև Հունիսի 1",
+    "waiting_for_reply": "Կսպասենք ձեր պատասխանին մինչև Հունիսի 5",
     "wedding_ceremony": {
       "invitation_name": "Պսակադրության արարողություն",
-      "time": "14:30",
+      "time": "14:20",
       "place_name": "Սաղմոսավանք"
     },
     "wedding_party": {
       "invitation_name": "Հարսանյաց հանդիսություն",
-      "time": "17:30",
+      "time": "17:15",
       "place_name": "Հատիս Հոլ"
     }
   },
